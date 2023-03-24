@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+            
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-image: url("d1.jpg");
+    background-position: center ;
+    background-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    text-shadow: #232d60;
+}
+.container h1{
+    text-align: center;
+    color: rgb(194, 74, 22);
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 70%;
+}
+.music{
+    width: 300px;
+    height:150px;
+    cursor: pointer;
+    
+}
+nav{
+    width:80%;
+    background: #0d0c0c;
+    padding-left: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 300px;
+    color:#777;
+    cursor:pointer;
+    position: relative;
+    z-index: 2;
+    transition :color 0.5s;
+    padding-left: 12px;
+}
+nav ul li::after{
+    content: '';
+    background:#b0789f;
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: -1;
+    opacity:0;
+}
+nav ul li:hover{
+	 color: rgb(162, 133, 133);
+}
+nav ul li:hover::after{
+    top:50%;
+    opacity:1;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(220, 15, 107);
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color:black;
+}
+.content p{
+	text-size-adjust: 100px;
+	text-align: center;
+    font-size: 50px;
+    color: #a59807;
+}
+.content {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WILDLIFE PHOTOGRAPHY</h1>
+        <div class="navbar">
+            <img src="d.jpeg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="photos.html">GALLERY</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>WILDLIFE PHOTOGRAPHY</h1><br><br>
+            <p><b>Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat.</b></p>
+        </div>
+      
+       </div>
+      
+</body>
+</html>
